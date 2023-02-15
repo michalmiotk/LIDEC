@@ -12,7 +12,7 @@ using namespace std::string_literals;
 class CLILoaderTest: public ::testing::Test
 {
 public:
-    CLILoader cLILoader{};
+    CLILoader<std::string> cLILoader{};
 };
 
 TEST_F(CLILoaderTest, GivenEmptyStringToParseWhenParseMethodIsCalledExpectReturningEmptyActionParams)
